@@ -199,6 +199,11 @@ a{
     font-weight: bold;
     font-size: 17px;
     margin-bottom: 20px;
+    transition: 0.2s;
+}
+
+.play_btn:hover{
+    color: var(--text-color-hover)
 }
 
 .play_icon{
@@ -207,11 +212,13 @@ a{
     transition-timing-function: ease-in-out;
 }
 
-.play_icon:hover{
+.play_btn:hover .play_icon:hover{
     box-shadow: 0 0 0px 12px rgba(255, 0, 0, 0.219);
     transform: scale(1.05);
 }
-
+.play_icon:hover .play_btn{
+    color: var(--text-color-hover)
+}
 .header__title{
     color: var(--text-color-gray);
     font-weight: bold;
@@ -287,6 +294,17 @@ a{
 .about-us__info{
     display: flex;
     justify-content: space-between;
+    position: relative;
+}
+
+.about-us__info::before{
+    content:"  ";
+    position: absolute;
+    background: url('../images/decore/shape_half-circle.svg') ;
+    top: -120px;
+    right: -110px;
+    width: 90px;
+    height: 90px;
 }
 
 .about-us__info-text{
@@ -316,7 +334,7 @@ a{
 
 
 .about-us__stats{
-    margin-top: 180px;
+    margin-top: 110px;
     display: flex;
     /* column-gap: 135px; */
     justify-content: space-between;
@@ -358,4 +376,174 @@ a{
     letter-spacing: 1px;
     margin-right: 16px;
     text-align: center;
+}
+
+/* ======================================================================== */
+
+.directions{
+    margin-top: 160px;
+    margin-bottom: 200px;
+}
+
+.directions__inner {
+}
+
+.directions__heading {
+    text-align: center;
+    margin-bottom: 88px;
+}
+
+.directions__subtitile {
+    margin-bottom: 8px;
+}
+
+
+.directions__body {
+}
+
+.directions__btn-box {
+    display: flex;
+    column-gap: 50px;
+    margin-bottom: 56px;
+}
+
+.directions__btn {
+    border: currentColor 1.5px solid;
+    border-radius: 4px;
+    background: transparent;
+    color: #9A9CA5;
+    padding: 1px 8px;
+    align-items: center;
+    font-weight: 700;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.directions__list {
+    display: flex;
+    column-gap: 33px;
+    white-space: wrap;
+    flex-wrap: wrap;
+    row-gap: 33px;
+}
+
+.directions__list-link {
+    width: 380px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.directions__list-link:hover{
+    box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.096);
+    transition: 0.4s;
+}
+
+.directions__list-link:hover .directions__item-check{
+    color: var(--text-color-hover);
+    transition: 0.4s;
+}
+
+.directions__list-item {
+    width: 100%;
+    border: 1px #E5E8ED solid;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.list__text-holder{
+    padding-inline: 24px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.directions_img-box {
+    height: 200px;
+    width: 380px;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+.directions__img{
+    height: 100%;
+    width: 100%
+}
+
+.directions__item-tag {
+    margin-bottom: 20px;
+    color: aliceblue;
+    background-color: #03CEA4;
+    border-radius: 4px;
+    padding: 4px 8px;
+    align-items: center;
+    font-weight: 700;
+    line-height: 25px;
+    margin-bottom: 20px;
+    width: fit-content;
+}
+
+/* tags */
+
+.management{
+    background-color: #5A87FC;
+}
+
+.hR{
+    border-color: #F89828;
+}
+
+
+.design{
+    background-color: #F52F6E;
+}
+
+.development{
+    background-color: #7772F1;
+}
+/* ===== */
+
+
+.directions__item-text {
+    margin-bottom: 20px;
+}
+
+.directions__item-check {
+    font-weight: 700;
+    line-height: 25.60px;
+    position: relative;
+    margin-right: 8px;
+}
+
+.directions__item-check::after{
+    position: absolute;
+    content:"";
+    background: url('../images/icons/next-arrow.svg');
+    width: 24px;
+    height: 24px;
+    top:3px
+}
+
+.directions__list-item--empty {
+    height: max-content;
+    background: #F4F5F6;
+    width: 390px; height: 420px;
+    padding-top: 164px;
+    padding-bottom: 196px;
+    padding-left: 74px;
+    padding-right: 74px;
+    background: #F4F5F6;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.none-hover:hover{
+    
+}
+
+.active{
+    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(255,63,58,1) 0%, rgba(247,94,5,1) 100%);
+    color: #E5E8ED;
+    border: none;
+    padding: 2px 9px;
 }

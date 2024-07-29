@@ -7,11 +7,8 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -85,7 +82,6 @@
             <section class="about-us">
                 <div class="content">
                     <div class="about-us__inner">
-
                         <div class="about-us__info">
                             <div class="about-us__info-text">
                                 <h6 class="about-us__subtitle subtitle">About us</h4>
@@ -99,7 +95,6 @@
                             </div>
                             <img  class="about-us__info-img" src="images/about_img.svg">
                         </div>
-
                         <div class="about-us__stats">
                             <div class="about-us__img-box"><img src="images/numsImage.jpg" alt="" class="about-us__stats-photo"></div>
                             <ul class="about-us__nums">
@@ -109,15 +104,106 @@
                                 <li class="nums-item"><span class="red-num">5</span>years of experience</li>
                             </ul>
                         </div>
-
                     </div>
                 </div>
-             </section>
+            </section>
+
+            <section class="directions">
+                <div class="content">
+                    <div class="directions__inner">
+                        <div class="directions__heading">
+                            <h5 class="directions__subtitile subtitle">our main directions</h5>
+                            <h1 class="directions__title title">What do we teach</h1>
+                        </div>
+                        <div class="directions__body">
+                            <ul class="directions__btn-box">
+                                    <button class="directions__btn active" type="button" data-filter="all">All</button>
+                                    <button class="directions__btn" type="button" data-filter=".marketing">Marketing</button>
+                                    <button class="directions__btn" type="button" data-filter=".Management">Management</button>
+                                    <button class="directions__btn" type="button" data-filter=".HR">HR & Recruting</button>
+                                    <button class="directions__btn" type="button" data-filter=".Design">Design</button>
+                                    <button class="directions__btn" type="button" data-filter=".Development">Development</button>
+                            </ul>
+                            <ul class="directions__list">
+                                <a href="#" class="mix directions__list-link marketing " data-order="1">
+                                    <li class="directions__list-item">
+                                        <div class="directions_img-box">
+                                            <img class="directions__img" src="images/directions/1.jpg">
+                                        </div>
+                                        <div class="list__text-holder">
+                                            <span class="directions__item-tag">Marketing</span>
+                                            <p class="directions__item-text paragraph">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.</p>
+                                            <p class="directions__item-check">Check courses</p>
+                                        </div>    
+                                    </li>
+                                </a>
+                                <a href="#" class="mix directions__list-link Management" data-order="2">
+                                    <li class="directions__list-item">
+                                        <div class="directions_img-box">
+                                            <img class="directions__img" src="images/directions/2.jpg">
+                                        </div>
+                                        <div class="list__text-holder">
+                                            <span class="directions__item-tag management">Management</span>
+                                            <p class="directions__item-text paragraph">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.</p>
+                                            <p class="directions__item-check">Check courses</p>
+                                        </div>    
+                                    </li>
+                                </a>
+
+                                <a href="#" class="mix directions__list-link HR" data-order="3">
+                                    <li class="directions__list-item">
+                                        <div class="directions_img-box">
+                                            <img class="directions__img" src="images/directions/3.jpg">
+                                        </div>
+                                        <div class="list__text-holder">
+                                            <span class="directions__item-tag hR">HR & Recruting</span>
+                                            <p class="directions__item-text paragraph">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.</p>
+                                            <p class="directions__item-check">Check courses</p>
+                                        </div>
+                                    </li>
+                                </a>
+
+                                <a href="#" class="mix directions__list-link Design" data-order="4">
+                                    <li class=" directions__list-item" >
+                                        <div class="directions_img-box">
+                                            <img class="directions__img" src="images/directions/4.jpg">
+                                        </div>
+                                        <div class="list__text-holder">
+                                            <span class="directions__item-tag design">Design</span>
+                                            <p class="directions__item-text paragraph">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.</p>
+                                            <p class="directions__item-check">Check courses</p>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="#" class="mix directions__list-link Development" data-order="5">
+                                    <li class="directions__list-item">
+                                        <div class="directions_img-box">
+                                            <img class="directions__img" src="images/directions/5.jpg">
+                                        </div>
+                                        <div class="list__text-holder">
+                                            <span class="directions__item-tag development">Development</span>
+                                            <p class="directions__item-text paragraph">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.</p>
+                                            <p class="directions__item-check">Check courses</p>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="#"  class="mix directions__list-link none-hover" data-order="6">
+                                    <li class="directions__list-item--empty">
+                                        New studying program coming soon...
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>    
+            </section>
+
         </main>
         <footer class="footer"></footer>
     </div>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-  <script>
-    Fancybox.bind("[data-fancybox]", {}); </script>
+  <script>Fancybox.bind("[data-fancybox]", {}); </script>
+  <script src="scripts/mixitup.min.js"></script>
+  <script src="scripts/mixScript.js"></script>
 </body>
 </html>
