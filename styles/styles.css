@@ -933,14 +933,20 @@ a{
 .testim__slider {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 50px 0px;;
     margin-bottom: 25px;
+    background-color: #fff;
+    padding-bottom: -25px;
 }
 
 .tastim__slide {
     background-color: #fff;
     padding: 64px 105px;
     display: flex;
+    width: 100%;
+    height: 100%;
 }
-
+/* .slick-list{
+    background-color: #fff;
+} */
 .qots{
     width: fit-content;
 }
@@ -1045,11 +1051,13 @@ a{
     width: 100%;
     height: 100%;
     filter: grayscale(1);
-    transition: 0.2s;
+    opacity: 0.5;
+    transition: 0.2s ease-in;
 }
 
 .partners__logoes-link:hover img{
     filter: grayscale(0);
+    opacity: 1;
 }
 
 
@@ -1065,6 +1073,5 @@ a{
 
 .program__heading{}
 
-.program__body details::before{
-    content: "lol";
+.program__body{
 }
