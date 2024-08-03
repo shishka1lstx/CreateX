@@ -1071,7 +1071,75 @@ a{
  
 .program__inner{ }
 
-.program__heading{}
+.program__heading{
+    margin-bottom: 60px;
+}
 
 .program__body{
+    display: flex;
+    
 }
+
+.program__acc{
+    margin-right: 135px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    
+    width: 50%;
+}
+
+.program__acc-item{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.program__acc-link{
+    display: block;
+    padding-left: 40px;
+}
+
+.program__acc-head{
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.program__acc-head::before, .program__acc-head::after{
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: var(--text-color-hover);
+    top: 50%;
+    left: -40px;
+}
+
+.program__acc-head::after{
+    transform: rotate(90deg);
+    transition: .3s;
+}
+
+.program__acc-link--active .program__acc-head::after{
+    transform: rotate(0);
+}
+
+.program__acc-head span{
+    color: var(--text-color-hover);
+    font-weight: 400;
+    margin-right: 8px;
+}
+
+.program__acc-text{
+    text-align: flex-start;
+    display: none;
+}
+
+
+/* =============================================== BLOG =================================================== */
+/* =============================================== BLOG =================================================== */
+
+
+
+
