@@ -1,5 +1,6 @@
 html, body{
     font-family: 'Lato';
+    
 }
 
 a{
@@ -1371,7 +1372,139 @@ margin-bottom: 180px;
 
 .contact__socials-item img:hover{
     opacity: 0.7;
+    filter: hue-rotate(90deg);
 }
 .contact__geo{
-
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 50px 0px;
+    width: 705px;
+    height: 412px;
 }
+
+.contact__geo-map{
+    height: 100%;
+    width: 100%;
+}
+
+
+/* =========================== questions =========================== */
+/* =========================== questions =========================== */
+
+.quest {
+    margin-bottom: 180px;
+}
+
+.quest__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quest__img-box {
+    margin-right: 10px;
+}
+
+.quest__content {
+}
+
+.quest__heading {
+    margin-bottom: 40px;
+}
+
+.ques__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.quest__form-row {
+    display: flex;
+    column-gap: 35px;
+}
+
+.ques__form-label {
+    display: grid;
+    row-gap: 8px;
+    color:#424551;
+    font-weight: 400;
+}
+
+.quest__form-input{
+    border:none;
+    border-bottom: 2px solid var(--text-color-hover);
+    width: 340px;
+}
+ 
+.quest__form-input::placeholder{
+    color: #8c8e96;  
+}
+
+.quest__form-input:focus{
+    outline:none;
+}
+
+.ques__form-textarea {
+    border:none;
+    border-bottom: 2px solid var(--text-color-hover);
+    width: 705px;
+    height: 90px;
+    margin-bottom: 48px;
+    resize: none;
+}
+
+.ques__form-textarea::placeholder{
+    color: #8c8e96;  
+    padding: 10px;
+}
+
+.quest__form-textarea:focus{
+    outline:none;
+}
+
+.ques__form-check {
+    width: 315px;
+    margin-right: 50px;
+    display: flex;
+    row-gap: 8px;
+    color:#424551;
+    font-weight: 400;
+}
+
+.ques__form-checkbox{
+    position: relative;
+    width: 16px;
+    height: 16px;
+    margin-top: 4px;
+    margin-right: 7px;
+    flex: 0 0 auto;
+}
+
+.defalut-check {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0,0,0,0);
+    
+}
+
+.custom-check {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    inset: 0;
+    border:#424551 1px solid;
+    border-radius: 3px;
+}
+
+.defalut-check:checked + .custom-check{
+    background: url('../images/icons/check.svg') 50% 50% no-repeat, #FF3F3A;
+    border-color: #FF3F3A;
+}
+
+.submit-btn {
+    padding-inline: 117px;
+     font-size: 16px;
+}
+
