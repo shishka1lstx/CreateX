@@ -1460,7 +1460,7 @@ margin-bottom: 180px;
 }
 
 .quest__form-textarea:focus{
-    outline: 0;
+    outline:  transparent;
 }
 
 .ques__form-check {
@@ -1610,9 +1610,16 @@ margin-bottom: 180px;
 }
 
 .footer__top-row__input input{
+    color:#fff;
     background: transparent;
+    outline: transparent;
     border:none;
     margin-right: auto;
+}
+
+.footer__top-row__input input:focus{
+    outline: transparent;
+
 }
 
 .footer-btn {
