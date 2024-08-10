@@ -1,6 +1,11 @@
 $(function(){ 
+    let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+    let slidShow = 4;
+    if(vw <= 431){slidShow = 1;}
+          
    $('.team__slider').slick({
-        slidesToShow: 4,
+        
+        slidesToShow: slidShow,
         slidesToScroll: 1,
         appendArrows: $('.slider__arrows'),
         nextArrow: $('.nxt-btn'),
